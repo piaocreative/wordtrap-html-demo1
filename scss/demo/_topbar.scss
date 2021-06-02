@@ -1,0 +1,201 @@
+
+/* ----------------------------------------------------------------
+
+	topbar.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for top bar. Thanks!
+-----------------------------------------------------------------*/
+
+
+#top-bar {
+	background-color: $secondary;
+	position: relative;
+	height: rem($topbar-height);
+	line-height: rem($topbar-line-height);
+	font-size: 0.75rem;
+
+	a {		
+		font-size: 0.75rem;
+		text-transform: uppercase;
+		line-height: rem($topbar-line-height);			
+
+		&:hover {			
+			font-weight: 700;
+		}
+	}
+}
+
+
+/* ----------------------------------------------------------------
+	Top Links
+-----------------------------------------------------------------*/
+
+
+.top-links {
+	position: relative;
+
+	ul {
+		margin: 0;		
+		display: flex;
+		
+
+		li {			
+			position: relative;	
+			padding-right: 1.875rem;		
+		}
+	}
+
+	li {
+		> a {
+			color: $topbar-color;
+			display: block;
+
+			&:hover {
+				color: $topbar-hover-color;
+			}
+		}
+
+		i {
+			margin-left: 0.5rem;
+		}
+
+		&:hover {
+			ul,
+			div.top-link-section {
+				display: block;
+			}
+		}
+	}
+
+	ul {
+		ul,
+		div.top-link-section {
+			display: none;
+			position: absolute;
+			z-index: 210;
+			line-height: 1.5;
+			background: $white;
+			border: 0;
+			top: rem($topbar-line-height);
+			left: 0;
+			width: 8.75rem;
+			margin: 0;
+			border-top: 3px solid $theme-color;
+			@include box-shadow(0 0 5px -1px rgba($black, 0.2));
+		}
+
+		ul {
+			li {
+				float: none;
+				height: 2.25rem;	
+				padding-right: 0;
+			}
+
+			a {
+				color: $heading-color;
+				height: 2.25rem;
+				line-height: 2.25rem;
+				font-size: 0.75rem;				
+				padding: 0 0.75rem;
+
+				&:hover {
+					color: $theme-color;
+				}
+			}
+
+			img {
+				display: inline-block;
+				position: relative;
+				top: -1px;
+				width: 1rem;
+				height: 1rem;
+				margin-right: 0.25rem;
+			}
+
+			&.top-demo-lang img {
+				top: 0.25rem;
+				width: 1rem;
+				height: 1rem;
+			}
+		}
+
+		div.top-link-section {
+			padding: 1.5rem;
+			left: 0;
+			width: 17.5rem;
+		}
+	}
+}
+
+
+/* ----------------------------------------------------------------
+	Top Infos
+-----------------------------------------------------------------*/
+
+.top-infos {
+	display: flex;
+
+	.phone-number {
+		margin-right: 2.875rem;
+		
+		a {
+			color: $topbar-color;
+			margin-left: 1.75rem;
+
+			&:hover {
+				color: $topbar-hover-color;
+			}
+		}
+	}
+}
+
+
+/* ----------------------------------------------------------------
+	Top Social
+-----------------------------------------------------------------*/
+
+.top-social,
+.top-social ul { margin: 0; }
+
+.top-social {
+	ul {
+		display: flex;
+		align-items: center;
+	}
+
+	li {
+		padding: 0 0.25rem;
+
+		a {
+			background-color: rgba($topbar-color, 0.7);
+			border-radius: 50%;
+			color: rgba($topbar-hover-color, 0.7);
+			display: inline-block;
+			line-height: 1.8125rem;
+			width: 1.8125rem;
+			height: 1.8125rem;		
+			vertical-align: middle;
+			text-align: center;
+			// @include transition(color .3s ease-in-out, background-color .3s ease-in-out, width .3s ease-in-out);
+
+			&:hover {
+				color: $topbar-hover-color;
+			}
+
+			i {
+				vertical-align: top;
+				line-height: 1.8125rem;
+			}
+		}
+	}
+}
+
+
+/* ----------------------------------------------------------------
+	Top Login
+-----------------------------------------------------------------*/
+
