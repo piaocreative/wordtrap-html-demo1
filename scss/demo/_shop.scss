@@ -19,7 +19,7 @@
 /* Category
 -----------------------------------------------------------------*/
 .category {
-	margin-bottom: rem(30);
+	margin-bottom: 1.875rem;
 
 	&:hover {
 		.category-image {
@@ -34,8 +34,8 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		width: rem(150);
-		height: rem(150);
+		width: 9.375rem;
+		height: 9.375rem;
 
 		img {
 			display: block;
@@ -43,7 +43,7 @@
 	}
 
 	.category-desc {
-		margin-top: rem(40);
+		margin-top: 2.5rem;
 	}
 
 	.category-title {		
@@ -52,7 +52,7 @@
 		font-size: $h4-font-size;
 		font-weight: 400;
 		line-height: $line-height-sm;		
-		margin-bottom: rem(6);
+		margin-bottom: 0.375rem;
 	}
 
 	.category-products-count {
@@ -68,7 +68,7 @@
 /* Product
 -----------------------------------------------------------------*/
 .product {
-	margin-bottom: rem(30);
+	margin-bottom: 1.875rem;
 	position: relative;
 
 	// Product Details on image
@@ -77,7 +77,7 @@
 			position: absolute;
 			left: 0;
 			width: 100%;
-			padding: rem(20);
+			padding: 1.25rem;
 
 			&.product-details-on-top {
 				top: 0;
@@ -92,10 +92,10 @@
 	// Product in flat mode
 	&.product-flat {
 		background-color: $white;
-		border-radius: rem(10);
+		border-radius: 0.625rem;
 		display: flex;
 		align-items: center;
-		height: rem(150);
+		height: 9.375rem;
 
 		.product-image,
 		.product-details {
@@ -115,7 +115,7 @@
 		}
 
 		.product-details {
-			padding-left: rem(15);
+			padding-left: 0.9375rem;
 		}
 	}
 
@@ -129,13 +129,13 @@
 
 		.onhot {
 			position: absolute;
-			left: rem(20);
-			top: rem(20);
+			left: 1.25rem;
+			top: 1.25rem;
 		}
 	}
 
 	.product-details {
-		padding: rem(20) 0 0 0;		
+		padding: 1.25rem 0 0 0;		
 	}
 
 	.product-price {
@@ -148,7 +148,7 @@
 		align-items: center;
 
 		.onsale {
-			margin-left: rem(8);
+			margin-left: 0.5rem;
 		}
 	}
 
@@ -177,7 +177,7 @@
 	}
 
 	.product-rating {
-		margin-top: rem(8);
+		margin-top: 0.5rem;
 
 		i {
 			color: $theme-color;
@@ -198,7 +198,7 @@
 
 	.onsale {
 		background-color: $theme-color;
-		border-radius: rem(8);
+		border-radius: 0.5rem;
 		color: $white;
 		display: inline-block;
 		font-family: $body-font;
@@ -206,7 +206,7 @@
 		font-weight: 600;
 		line-height: 1;
 		text-transform: uppercase;
-		padding: rem(2) rem(4);
+		padding: 0.125rem 0.25rem;
 	}
 
 	.add-to-cart,
@@ -220,6 +220,6 @@
 	}
 
 	.add-to-cart {
-		margin-right: rem(15);
+		margin-right: 0.9375rem;
 	}
 }

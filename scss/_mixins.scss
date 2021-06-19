@@ -61,8 +61,3 @@
 	-ms-transform: scale($val);
 	transform: scale($val);
 }
-
-@function rem($val) {
-	$remValue: ($val / 16) + rem; 
-    @return $remValue;
-}

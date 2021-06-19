@@ -23,7 +23,7 @@
 		font-size: $h5-font-size;
 		font-family: $body-font;
 		font-weight: 600;
-		margin-bottom: rem(12);
+		margin-bottom: 0.75rem;
 	}	
 
 	// Widget - Social
@@ -85,15 +85,15 @@
 			.payment-icon {
 				display: inline-block;
 				vertical-align: middle;
-				margin-right: rem(4);
-				width: rem(56);
-				height: rem(32);
+				margin-right: 0.25rem;
+				width: 3.5rem;
+				height: 2rem;
 				background-color: #d6d3cc;
 				background-size: 80% auto;
 				background-repeat: no-repeat;
 				background-position: center;
 
-				@include border-radius(rem(4));
+				@include border-radius(0.25rem);
 
 				&.visa {
 					background-image: url(../images/payments/visa.svg);

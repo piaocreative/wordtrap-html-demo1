@@ -97,24 +97,24 @@ $input-focus-border-color:      $theme-color;
 
 //-------------------- Top Bar --------------------//
 
-$topbar-height:                 45;
-$topbar-line-height:            $topbar-height - 1;
+$topbar-height:                 2.8125rem;
+$topbar-line-height:            2.75rem;
 $topbar-color:                  #7c7b7a;
 $topbar-hover-color:            #f0f0f0;
 
 
 //-------------------- Header --------------------//
 
-$header-height:                 94;
+$header-height:                 5.875rem;
 
 // Sticky Header
-$sticky-header-height:          60;
+$sticky-header-height:          3.75rem;
 
 
 //-------------------- Primary Menu --------------------//
 
-$primary-menu-padding:					( $header-height - 15 - 3 ) / 2;
-$sticky-menu-padding:					  ( $sticky-header-height - 15 ) / 2;
+$primary-menu-padding:					2.375rem;
+$sticky-menu-padding:					  1.40625rem;
 
 $primary-menu-font:             $body-font;
 $primary-menu-font-weight:      400;

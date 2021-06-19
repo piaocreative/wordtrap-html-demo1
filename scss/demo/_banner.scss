@@ -24,14 +24,14 @@
     position: relative;
 
     .banner-wrap {
-        padding-top: rem(190);
-        padding-bottom: rem(144);
+        padding-top: 11.875rem;
+        padding-bottom: 9rem;
     }
     
 
     & + #header.transparent-header {
-        top: -rem($header-height);
-        margin-bottom: -rem($header-height);
+        top: -$header-height;
+        margin-bottom: -$header-height;
     }
 
     h2 {

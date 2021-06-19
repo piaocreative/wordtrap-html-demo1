@@ -29,24 +29,24 @@ img {
 
 .section {
 	position: relative;
-	padding-top: rem($section-spacer);
-	padding-bottom: rem($section-spacer);
+	padding-top: $section-spacer;
+	padding-bottom: $section-spacer;
 }
 
 .section-padding-top {
-	padding-top: rem($section-spacer);
+	padding-top: $section-spacer;
 }
 
 .section-padding-bottom {
-	padding-bottom: rem($section-spacer);
+	padding-bottom: $section-spacer;
 }
 
 .section-margin-top {
-	margin-top: rem($section-spacer);
+	margin-top: $section-spacer;
 }
 
 .section-margin-bottom {
-	margin-bottom: rem($section-spacer);
+	margin-bottom: $section-spacer;
 }
 
 

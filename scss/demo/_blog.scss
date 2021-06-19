@@ -11,7 +11,7 @@
 
 .post {
 	position: relative;
-	margin-bottom: rem(30);
+	margin-bottom: 1.875rem;
 
 	&.post-flat {
 		display: flex;
@@ -46,7 +46,7 @@
 
 .post-content {
 	position: relative;
-	padding: rem(30) 0;
+	padding: 1.875rem 0;
 }
 
 .entry-title {
@@ -65,12 +65,12 @@
 
 .entry-meta {
 	list-style: none;
-	margin-bottom: rem(20);
+	margin-bottom: 1.25rem;
 
 	li {
 		i {
 			color: rgba($theme-color, 0.5);
-			margin-right: rem(12);
+			margin-right: 0.75rem;
 		}
 
 		a {
@@ -81,7 +81,7 @@
 
 .entry-content { 
 	position: relative; 
-	margin-bottom: rem(50);
+	margin-bottom: 3.125rem;
 }
 
 .entry-link {

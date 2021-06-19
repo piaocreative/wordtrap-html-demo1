@@ -16,8 +16,8 @@
 
 #footer {
 	position: relative;
-	padding-top: rem(70);
-	padding-bottom: rem(90);
+	padding-top: 4.375rem;
+	padding-bottom: 5.625rem;
 	
 	&:before {
 		content: "";
@@ -31,7 +31,7 @@
 
 	hr {
 		background-color: #5c5b59;
-		margin: rem(40) 0;
+		margin: 2.5rem 0;
 	}
 }
 

@@ -14,14 +14,14 @@
 #top-bar {
 	background-color: $secondary;
 	position: relative;
-	height: rem($topbar-height);
-	line-height: rem($topbar-line-height);
+	height: $topbar-height;
+	line-height: $topbar-line-height;
 	font-size: 0.75rem;
 
 	a {		
 		font-size: 0.75rem;
 		text-transform: uppercase;
-		line-height: rem($topbar-line-height);			
+		line-height: $topbar-line-height;			
 
 		&:hover {			
 			font-weight: 700;
@@ -80,7 +80,7 @@
 			line-height: 1.5;
 			background: $white;
 			border: 0;
-			top: rem($topbar-line-height);
+			top: $topbar-line-height;
 			left: 0;
 			width: 8.75rem;
 			margin: 0;
