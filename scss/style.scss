@@ -12,8 +12,8 @@
 -----------------------------------------------------------------------------------*/
 
 // Initialize
-@import "variables";
 @import "mixins";
+@import "variables";
 
 
 // Bootstrap
@@ -28,18 +28,36 @@
 @import "demo/topbar";
 @import "demo/header";
 @import "demo/banner";
-// @import "demo/pagetitle";
-// @import "demo/blog";
-// @import "demo/shop";
+@import "demo/blog";
+@import "demo/shop";
 
 
 // Footer
-// @import "demo/footer";
+@import "demo/footer";
+
+
+// Page Title
+@import "demo/pagetitle";
+
+
+// Form
+@import "demo/form";
 
 
 // Widgets
-// @import "demo/widgets";
+@import "demo/widgets";
+
+
+// Utilities
+@import "demo/utilities";
+
+
+// Shortcodes
+@import "demo/shortcodes/feature-box";
+@import "demo/shortcodes/headings";
+@import "demo/shortcodes/logos";
+@import "demo/shortcodes/icon-box";
 
 
 // Extras
-// @import "demo/extras";
+@import "demo/extras";

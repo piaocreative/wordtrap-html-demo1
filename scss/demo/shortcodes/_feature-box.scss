@@ -1,0 +1,47 @@
+
+/*-----------------------------------------------------------------------------------
+
+	Shortcodes: feature-box.scss
+
+-----------------------------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Featured Boxes
+-----------------------------------------------------------------*/
+
+
+.fbox {
+	position: relative;
+	margin-bottom: rem(30);
+
+	&.fbox-horiz {
+		padding-left: rem(58);
+	}
+
+	.fbox-icon {
+		display: block;
+		position: absolute;				
+		left: 0;
+		top: rem(6);
+		
+		img {
+			display: block;
+		}
+	}
+
+	h4 {
+		color: $heading-color;
+		font-family: $body-font;
+		font-weight: 400;
+		line-height: $line-height-sm;
+		margin-bottom: 0;
+	}
+
+	p {
+		color: $body-color;
+		font-family: $body-font;
+		line-height: $line-height-base;
+		margin-bottom: 0;
+	}
+}
+

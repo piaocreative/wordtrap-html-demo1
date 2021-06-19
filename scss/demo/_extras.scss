@@ -15,3 +15,17 @@
 	Add here extra styles for demo. Thanks!
 -----------------------------------------------------------------*/
 
+#history_heighlight {
+	padding: 3.5rem 0;
+	position: absolute;
+	bottom: 0;
+
+	p {
+		font-size: $h3-font-size;
+		line-height: 1.5;
+	}
+}
+
+#map {
+	height: 30rem;
+}

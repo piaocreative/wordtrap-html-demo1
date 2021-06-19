@@ -44,16 +44,10 @@ dl, dt, dd, ol, ul, li {
 body {
 	line-height: $line-height-base;
 	color: $body-color;
-	font-size: rem($font-size-base);
+	font-size: $font-size-base;
 	font-family: $body-font;
 }
 
-a {
-	text-decoration: none !important;
-	color: $theme-color;	
-}
-
-img { max-width: 100%; }
 iframe { border: none !important; }
 
 
@@ -82,13 +76,6 @@ h1 {
 // h5,
 // h6 { margin-bottom: 1.25rem; }
 
-h1 { font-size: rem($font-size-h1); }
-h2 { font-size: rem($font-size-h2); }
-h3 { font-size: rem($font-size-h3); }
-h4 { font-size: rem($font-size-h4); }
-h5 { font-size: rem($font-size-h5); }
-h6 { font-size: rem($font-size-h6); }
-
 p,
 pre,
 dl,
@@ -107,4 +94,8 @@ ul li { list-style: none; }
 i { 
 	display: inline-block;
 	line-height: inherit;
+}
+
+a {
+	@include transition(color 0.3s ease-in-out);
 }
