@@ -25,7 +25,7 @@
 	============================================= -->
     <title>Demo1 | Saler</title>
 </head>
-<body>
+<body id="demo1">
 
     <!-- Document Wrapper
 	============================================= -->
@@ -529,115 +529,130 @@
 		============================================= -->
 		<footer id="footer">
 
-            <div class="container">
+            <!-- Footer Main
+		    ============================================= -->
+            <div id="footer-main">
 
-                <div class="row">
+                <div class="container">
 
-                    <div id="footer-left-col" class="col-lg-5">
+                    <div class="row">
 
-                        <div class="row">
+                        <div class="col-lg-5">
 
-                            <div class="col d-flex justify-content-between">                                
+                            <div class="row">
 
-                                <div class="widget widget-custom-html">
-                                    <h4 class="widget-title text-body text-uppercase">Call Now</h4>
-                                    <div class="custom-html">
-                                        <p class="mb-4"><a href="callto:1234567890" class="text-white h2 lh-1 body-font fw-semi-bold">123-456-7890</a></p>
-                                        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim.</p>
-                                    </div>                                    
-                                </div>
+                                <div class="col d-flex justify-content-between">                                
 
-                                <div class="widget widget-social text-end">
-                                    <h4 class="widget-title text-body text-uppercase">Follow Us</h4>
-                                    <ul class="social-icons d-flex align-items-center justify-content-end">
-                                        <li><a href="#" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="#" target="_blank" title="Linkedin"><i class="fab fa-instagram"></i></a></li>
-                                    </ul>
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                        <hr />
-
-                        <div class="row pb-5">
-
-                            <div class="col-12">
-
-                                <div class="widget widget-links">
-                                    <ul>
-                                        <li><a href="#">About Us</a></li>
-                                        <li><a href="#">Our Service</a></li>
-                                        <li><a href="#">Order Tracking</a></li>
-                                        <li><a href="#">Shipping & Delivery</a></li>
-                                    </ul>
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                        <div class="row pt-3">
-
-                            <div class="col d-flex align-items-center justify-content-between">
-
-                                <div class="widget widget-payment">
-                                    <div class="payments">
-                                        <span class="payment-icon visa"></span>
-                                        <span class="payment-icon paypal"></span>
-                                        <span class="payment-icon mastercard"></span>
-                                        <span class="payment-icon express"></span>
-                                    </div>                                    
-                                </div>
-
-                                <p id="copyrights" class="text-end mb-0">&copy; Copyrights 2021. All Rights Reserved.</p>
-
-                            </div>
-
-                        </div>
-                        
-                    </div>
-
-                    <div id="footer-right-col" class="col-lg-5 offset-lg-2">
-
-                        <div class="row">
-
-                            <div class="col">
-
-                                <div class="widget widget-custom-html">
-                                    <h4 class="widget-title text-primary body-font text-uppercase">Our Address</h4>
-                                    <div class="custom-html">                                        
-                                        <p class="text-black h2 body-font fw-semi-bold">New York</p>
-                                        <p class="text-black mb-0">5686 Edverano Center</p>
-                                        <p><a href="mailto:info@gmail.com" class="text-primary">info@gmail.com</a></p>
+                                    <div class="widget widget-custom-html">
+                                        <h4 class="widget-title text-body text-uppercase">Call Now</h4>
+                                        <div class="widget-content">
+                                            <p class="mb-4"><a href="callto:1234567890" class="text-white h2 lh-1 body-font fw-semi-bold">123-456-7890</a></p>
+                                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim.</p>
+                                        </div>                                    
                                     </div>
-                                </div>
-        
-                                <hr />
-        
-                                <div class="widget widget-subscribe">
-                                    <h4 class="widget-title text-uppercase">Subscribe to our the free newslettr</h5>
-                                    <form id="widget-subscribe-form" action="#" method="post">
-                                        <div class="input-group">
-                                            <input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="form-control required email" placeholder="Email">
-                                            <div class="input-group-append">
-                                                <button class="btn btn-primary text-uppercase" type="submit">Subscribe</button>
-                                            </div>
+
+                                    <div class="widget widget-social text-end">
+                                        <h4 class="widget-title text-body text-uppercase">Follow Us</h4>
+                                        <div class="widget-content">
+                                            <ul class="social-icons d-flex align-items-center justify-content-end">
+                                                <li><a href="#" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                                                <li><a href="#" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                                                <li><a href="#" target="_blank" title="Linkedin"><i class="fab fa-instagram"></i></a></li>
+                                            </ul>
                                         </div>
-                                    </form>
-                                </div>        
+                                    </div>
+
+                                </div>
 
                             </div>
 
+                            <hr />
+
+                            <div class="row pb-5">
+
+                                <div class="col-12">
+
+                                    <div class="widget widget-links">
+                                        <div class="widget-content">
+                                            <ul>
+                                                <li><a href="#">About Us</a></li>
+                                                <li><a href="#">Our Service</a></li>
+                                                <li><a href="#">Order Tracking</a></li>
+                                                <li><a href="#">Shipping & Delivery</a></li>
+                                            </ul>
+                                        </div>                                    
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="row pt-3">
+
+                                <div class="col d-flex align-items-center justify-content-between">
+
+                                    <div class="widget widget-payment">
+                                        <div class="widget-content">
+                                            <div class="payments">
+                                                <span class="payment-icon visa"></span>
+                                                <span class="payment-icon paypal"></span>
+                                                <span class="payment-icon mastercard"></span>
+                                                <span class="payment-icon express"></span>
+                                            </div>                                    
+                                        </div>
+                                        
+                                    </div>
+
+                                    <p id="copyrights" class="text-end mb-0">&copy; Copyrights 2021. All Rights Reserved.</p>
+
+                                </div>
+
+                            </div>
+                            
                         </div>
-                        
+
+                        <div class="col-lg-5 offset-lg-2">
+
+                            <div class="row">
+
+                                <div class="col">
+
+                                    <div class="widget widget-custom-html">
+                                        <h4 class="widget-title text-primary body-font text-uppercase">Our Address</h4>
+                                        <div class="widget-content">                                        
+                                            <p class="text-black h2 body-font fw-semi-bold">New York</p>
+                                            <p class="text-black mb-0">5686 Edverano Center</p>
+                                            <p><a href="mailto:info@gmail.com" class="text-primary">info@gmail.com</a></p>
+                                        </div>
+                                    </div>
+            
+                                    <hr />
+            
+                                    <div class="widget widget-subscribe">
+                                        <h4 class="widget-title text-uppercase">Subscribe to our the free newslettr</h5>
+                                        <div class="widget-content">
+                                            <form id="widget-subscribe-form" action="#" method="post">
+                                                <div class="input-group">
+                                                    <input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="form-control required email" placeholder="Email">
+                                                    <div class="input-group-append">
+                                                        <button class="btn btn-primary text-uppercase" type="submit">Subscribe</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>                                    
+                                    </div>        
+
+                                </div>
+
+                            </div>
+                            
+                        </div>
+
                     </div>
 
                 </div>
 
-            </div>
+            </div><!-- #footer-main -->
 
         </footer><!-- #footer -->
 

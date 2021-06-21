@@ -48,31 +48,3 @@ img {
 .section-margin-bottom {
 	margin-bottom: $section-spacer;
 }
-
-
-//-------------------- Link --------------------//
-
-.arrow-link {
-	position: relative;
-	padding-right: 1.5rem;	
-
-	&:after {
-		content: "";
-		position: absolute;
-		right: 0.25rem;
-		top: 50%;
-		margin-top: -0.25rem;
-		display: block;
-		width: 0.25rem;
-		height: 0.8rem;
-		background-image: url(../images/right-arrow-icon.png);
-		background-repeat: no-repeat;
-		background-size: 100%;		
-		opacity: 0;
-		@include transition(opacity 0.3s ease-in-out);
-	}
-
-	&:hover:after {
-		opacity: 1;
-	}
-}

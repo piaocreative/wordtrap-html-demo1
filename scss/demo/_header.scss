@@ -23,6 +23,11 @@
 	&.transparent-header {
 		background: transparent;
 		z-index: 199;
+
+		& + #banner {
+			top: -$header-height;
+			margin-bottom: -$header-height;
+		}
 	}
 }
 
