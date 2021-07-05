@@ -72,6 +72,10 @@
 					color: $white;
 					font-weight: 600;
 					text-transform: uppercase;
+
+					&:hover {
+						color: $theme-color;
+					}
 				}
 			}
 		}
@@ -113,12 +117,18 @@
 			}
 		}
 	}
-}
 
-
-/* Widget - Products
------------------------------------------------------------------*/
-
-.widget {
-	
+	// Widget - Subscribe
+	&.widget-subscribe {
+		.widget-content {
+			.form-control:focus {
+				& + .input-group-append {
+					.btn {
+						border-top-left-radius: 0;
+    					border-bottom-left-radius: 0;
+					}
+				}
+			}
+		}
+	}
 }

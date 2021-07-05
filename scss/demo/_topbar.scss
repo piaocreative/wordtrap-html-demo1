@@ -16,17 +16,7 @@
 	position: relative;
 	height: $topbar-height;
 	line-height: $topbar-line-height;
-	font-size: 0.75rem;
-
-	a {		
-		font-size: 0.75rem;
-		text-transform: uppercase;
-		line-height: $topbar-line-height;			
-
-		&:hover {			
-			font-weight: 700;
-		}
-	}
+	font-size: 0.75rem;	
 }
 
 
@@ -180,9 +170,10 @@
 			height: 1.8125rem;		
 			vertical-align: middle;
 			text-align: center;
-			// @include transition(color .3s ease-in-out, background-color .3s ease-in-out, width .3s ease-in-out);
+			@include transition(all .3s ease-in-out);
 
 			&:hover {
+				background-color: $theme-color;
 				color: $topbar-hover-color;
 			}
 
