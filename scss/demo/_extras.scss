@@ -17,8 +17,11 @@
 
 #history_heighlight {
 	padding: 3.5rem 0;
-	position: absolute;
-	bottom: 0;
+
+	@include media-breakpoint-up(xxl) {
+		position: absolute;
+		bottom: 0;	
+	}	
 
 	p {
 		font-size: $h3-font-size;

@@ -64,9 +64,6 @@
 	// Widget - Links
 	&.widget-links {
 		ul {
-			display: flex;
-			justify-content: space-between;
-
 			li {
 				a {
 					color: $white;
@@ -84,8 +81,6 @@
 	// Widget - Payments
 	&.widget-payment {
 		.payments {
-			display: flex;
-
 			.payment-icon {
 				display: inline-block;
 				vertical-align: middle;
