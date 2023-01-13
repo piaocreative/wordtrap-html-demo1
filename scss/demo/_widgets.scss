@@ -126,4 +126,61 @@
 			}
 		}
 	}
+
+	// Widget - Recent Posts
+	&.widget-latest-posts {
+		.post {
+			margin-bottom: 0.625rem;
+		}
+	}
+
+	// Widget - Recent Comments
+	&.widget-latest-comments {
+		.comment-link {
+			color: $primary;
+		}
+	}
+
+	// Widget - Post Categories
+	&.widget-post-categories {
+		.post-categories {
+			li {
+				position: relative;
+			}
+
+			a {
+				&[data-bs-toggle] {
+					&::after {
+						content: "";
+						background-size: 100%;
+						background-repeat: no-repeat;
+						position: absolute;
+						right: 0;
+						top: 0.75rem;
+						display: block;
+						width: 0.6875rem;
+						height: 0.4375rem;
+					}
+
+					&[aria-expanded="true"] {
+						color: $theme-color;
+						
+						&::after {
+							background-image: escape-svg($arrow-up-icon);
+						}
+					}
+
+					&[aria-expanded="false"]{
+						&::after {
+							background-image: escape-svg($arrow-down-icon);
+						}
+					}
+				}
+			}
+
+			.children {
+				margin-left: 1rem;
+			}
+		}
+	}
 }

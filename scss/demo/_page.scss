@@ -1,0 +1,226 @@
+
+/* ----------------------------------------------------------------
+
+	page.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Page Styles
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for page title. Thanks!
+-----------------------------------------------------------------*/
+
+.page-content {
+	padding-top: 3.125rem;
+	padding-bottom: 5.625rem;
+}
+
+#page-title {
+	position: relative;
+	padding-top: 5.5rem;
+	
+	.title {
+		display: block;		
+		font-family: $heading-font;
+		font-size: $h1-font-size;
+		font-weight: 900;		
+		line-height: 1;
+		margin-bottom: 3.25rem;
+	}
+
+	.sub-title {
+		display: block;
+		font-family: $heading-font;		
+		font-size: $h2-font-size;
+		font-weight: 700;
+		line-height: 1;
+		margin-bottom: 1.5rem;
+	}
+}
+
+.breadcrumb {
+	display: flex;
+	font-size: $h6-font-size;
+
+	li {
+		padding: 0 0.625rem;
+
+		&:first-child {
+			padding-left: 0;
+		}
+	}
+}
+
+
+/* Sidebar
+-----------------------------------------------------------------*/
+.sidebar {
+	@include media-breakpoint-down(lg) {
+		margin-top: 1.875rem;
+	}
+
+	.widget {
+		background-color: $white;	
+		padding: 1.875rem;
+		margin-bottom: 0.625rem;
+
+		@include border-radius(0.5rem);
+	}
+}
+
+
+/* Team Member
+-----------------------------------------------------------------*/
+.team-member {
+	background-color: $white;
+	padding: 0.625rem;
+	margin-bottom: 1rem;
+
+	@include border-radius(0.5rem);
+
+	.member-avatar {
+		@include border-radius(0.5rem);
+	}
+
+	.member-name {
+		font-size: 1.3125rem;
+		margin-bottom: 1rem;
+	}
+
+	.member-role {
+		color: $primary;
+		font-size: 0.75rem;		
+	}
+
+	.member-intro {
+		margin-top: 1.5rem;		
+
+		.read-more {
+			color: $primary;
+			font-size: 1rem;
+			font-weight: 600;
+
+			&::after {
+				content: escape-svg($external-link-icon);
+				position: relative;
+				top: 3px;
+				margin-left: 0.625rem;
+			}
+		}
+	}
+
+	.member-actions {
+		margin-top: 1.875rem;
+		padding-top: 1.875rem;
+		border-top: 1px solid $light;
+
+		.social-icons {
+			display: inline-block;
+			margin-left: 1.125rem;
+
+			li {
+				display: inline-block;
+
+				a {
+					background-color: $light;
+					color: $secondary;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					width: 2.25rem;
+					height: 2.25rem;
+
+					@include border-radius(0.5rem);
+				}
+			}
+		}
+	}
+
+	.member-details {
+		padding: 3rem;
+	}
+}
+
+.single-member {
+	main {
+		background-color: $white;
+	}	
+
+	.team-member {
+		background-color: transparent;
+		padding: 0;    
+		margin-top: 2.25rem;
+	}
+
+	.member-services {
+		background-color: $light;
+		padding: 5rem 0 3.125rem;
+
+		.member-service {
+			padding-left: 2.25rem;
+			position: relative;
+
+			&::before {
+				content: "";				
+				background-image: escape-svg($checker-icon);
+				background-repeat: no-repeat;
+				background-size: 100%;
+				display: block;
+				width: 1rem;
+				height: 0.8125rem;
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+
+			h3 {
+				font-family: $body-font;
+				font-size: 1rem;
+				margin-bottom: 1.375rem;
+			}
+		}
+	}
+
+	.member-portfolios {
+		padding-top: 5rem;
+
+		.member-portfolio {
+			margin-bottom: 1.875rem;
+
+			img {
+				margin-bottom: 1.5rem;
+
+				@include border-radius(0.5rem);
+			}
+
+			h3 {
+				font-family: $body-font;
+				font-size: 1rem;
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+
+/* Blog Page
+-----------------------------------------------------------------*/
+.blog-page {
+	#posts {
+		.post {
+			background-color: $white;
+			padding: 0.625rem;
+	
+			@include border-radius(0.5rem);
+		
+			.post-content {
+				padding: 0.9375rem;
+			}
+		}
+	}	
+}

@@ -114,6 +114,7 @@ pre,
 dl,
 dd,
 blockquote,
+q,
 address,
 table,
 fieldset,
@@ -124,6 +125,27 @@ small { font-family: $body-font; }
 ul { margin: 0; }
 ul li { list-style: none; }
 
+ul:not([class], .top-social *, .product-filters *) {
+	li {
+		padding-left: 1.875rem;
+		position: relative;
+
+		&::before {
+			content: "";
+			border-bottom: 2px solid $theme-color;
+			border-right: 2px solid $theme-color;
+			top: 10px;
+			left: 10px;
+			width: 5px;
+			height: 8px;
+			display: block;
+			position: absolute;
+		
+			@include rotate(45deg);
+		}
+	}
+}
+
 i { 
 	display: inline-block;
 	line-height: inherit;
@@ -131,4 +153,41 @@ i {
 
 a {
 	@include transition(color 0.3s ease-in-out);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  	-webkit-appearance: none;
+  	margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  	-moz-appearance: textfield;
+}
+
+/* Blockquote */
+blockquote,
+q {
+	color: $theme-color;
+	display: block;
+	font-size: 1.875rem;
+	font-style: italic;
+	font-weight: 300;
+	line-height: 3.75rem;
+
+	&::before {
+		color: $theme-color;
+		font-size: 3rem;
+		font-style: italic;
+		font-weight: 300;
+		line-height: 1;
+		display: block;
+		text-align: center;
+	}
+
+	&::after {
+		content: "";
+	}
 }

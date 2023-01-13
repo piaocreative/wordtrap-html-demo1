@@ -69,11 +69,7 @@
 -----------------------------------------------------------------*/
 
 .navbar-brand {
-	margin-right: $spacer * 5.5;
-
-	img {
-		max-width: 4.75rem;
-	}
+	margin-right: $spacer * 2.5;
 }
 
 
@@ -102,22 +98,65 @@
 	}
 
 	.nav-item {
+		position: relative;
+
 		&.current,
 		&:hover {
-			a {
-				border-color: $theme-color;
+			> a {				
 				color: $link-hover-color;
+
+				@include media-breakpoint-up(lg) {
+					border-color: $theme-color;
+				}
 			}
 		}
+
+		.dropdown-menu {
+			border: none;
+			box-shadow: none;
+    		background-color: transparent;
+
+			@include media-breakpoint-up(lg) {
+				background-color: $white;
+				display: block;
+				min-width: 14rem;
+				top: -1000px;
+				opacity: 0;
+
+				@include box-shadow(0 8px 51px 21px rgba(169, 169, 169, 0.11));
+				@include border-radius(0.5rem);
+				@include transition(transform .2s ease-out);
+				@include translate3d(0, -20px, 0);
+			}
+			
+			.nav-item {
+				a {
+					border: none;
+					padding: 0.75rem 1.125rem;
+				}
+				
+				&.current,
+				&:hover {
+					> a {
+						background-color: $theme-color;
+						color: $white;
+					}					
+				}
+			}
+		}
+
+		@include media-breakpoint-up(lg) {
+			&.dropdown:hover {
+				.dropdown-menu {
+					top: auto;				
+					opacity: 1;
+	
+					@include translate3d(0, 0, 0);
+				}
+			}
+		}	
 	}
 }
-
-
-/* ----------------------------------------------------------------
-	Mega Menu
------------------------------------------------------------------*/
-
-// Please ignore mega menu now 
 
 
 /* ----------------------------------------------------------------
@@ -127,9 +166,7 @@
 
 #top-links {
 	.nav-item {			
-		@include media-breakpoint-up(lg) {
-			padding-right: $spacer * 1.875;		
-		}
+		padding-right: $spacer * 1.875;
 	}
 
 	a.nav-link {
@@ -160,9 +197,9 @@
 		width: 100%;		
 		margin: 0;
 		border-top: 3px solid $link-hover-color;
+		position: absolute;
 
 		@include border-radius(0);
-
 		@include box-shadow(0 0 5px -1px rgba($black, 0.2));
 
 		@include media-breakpoint-up(lg) {

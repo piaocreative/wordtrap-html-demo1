@@ -19,13 +19,17 @@
 
     <!-- Stylesheets
 	============================================= -->
+    <link rel="stylesheet" href="vendors/bootstrap-slider/css/bootstrap-slider.min.css" type="text/css" />
+
+    <!-- Stylesheets
+	============================================= -->
     <link rel="stylesheet" href="css/style.min.css" type="text/css" />
 
     <!-- Document Title
 	============================================= -->
     <title>Demo1 | Site Template - Wordtrap</title>
 </head>
-<body id="demo1">
+<body id="demo1" class="wishlist-page">
 
     <!-- Document Wrapper
 	============================================= -->
@@ -121,7 +125,7 @@
                             <li class="nav-item">
                                 <a href="index.html" class="nav-link">Home</a>
                             </li>                                  
-                            <li class="nav-item dropdown">
+                            <li class="current nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">eCommerce</a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">
@@ -136,12 +140,12 @@
                                     <li class="nav-item">
                                         <a href="checkout.html" class="nav-link">Checkout</a>
                                     </li>
-                                    <li class="nav-item">
+                                    <li class="current nav-item">
                                         <a href="wishlist.html" class="nav-link">My Wishlist</a>
                                     </li>
                                 </ul>
                             </li>                            
-                            <li class="current nav-item dropdown">
+                            <li class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">
@@ -156,7 +160,7 @@
                                     <li class="nav-item">
                                         <a href="member.html" class="nav-link">Team Member</a>
                                     </li>
-                                    <li class="current nav-item">
+                                    <li class="nav-item">
                                         <a href="404.html" class="nav-link">404</a>
                                     </li>
                                 </ul>
@@ -207,35 +211,125 @@
 		============================================= -->
 		<main id="content">
 
-            <div class="page-content">                           
+            <div class="page-content">           
                 
                 <div class="container">
 
                     <ul class="breadcrumb">
                         <li><a href="#">Home</a></li>
-                        <li class="active">404</li>
+                        <li><a href="#">Shop</a></li>
+                        <li class="active">My Wishlist</li>
                     </ul>
 
-                    <div class="section">
-                        <div class="row">
-                            <div class="col-lg-9 text-center">    
-                                <img src="images/pages/404.png" alt="404 page" class="img-fluid" />
-                                <p>We're sorry, but the page you were looking for doesn't exist.</p>    
-                            </div>    
-                            <div class="col-lg-3 text-center text-lg-start">                                
-                                <h5 class="body-font lh-1 text-uppercase">Here are some useful links</h5>
-                                <ul>
-                                    <li class="pb-3"><a href="#" class="mb-2 arrow-link">Home</a></li>
-                                    <li class="pb-3"><a href="#" class="mb-2 arrow-link">About Us</a></li>
-                                    <li class="pb-3"><a href="#" class="mb-2 arrow-link">FAQ's</a></li>
-                                    <li class="pb-3"><a href="#" class="mb-2 arrow-link">Sitemap</a></li>
-                                    <li class="pb-3"><a href="#" class="mb-2 arrow-link">Contact Us</a></li>
-                                </ul>    
-                            </div>    
-                        </div>
+                    <div id="page-title">                           
+                        <h1 class="title">My Wishlist</h1>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="wishlist-content">
+                                <table class="table shop-table" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>Image</th>
+                                            <th>Product</th>
+                                            <th>Price</th>
+                                            <th>Stock Status</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="wishlist-item">
+                                            <td class="product-thumbnail">
+                                                <a href="product.html">
+                                                    <img width="100" height="100" src="images/shop/product1_1.png" alt="Dress" class="img-fluid">
+                                                </a>
+                                            </td>            
+                                            <td class="product-name">
+                                                <a href="product.html">Man's Shoes</a>
+                                                <br />                                                
+                                                <a href="#" class="product-delete">Delete</a>
+                                            </td>            
+                                            <td class="product-price">$9.99</td>            
+                                            <td class="product-quantity">
+                                                <div class="quantity input-group">
+                                                    <div class="input-group-prepend">
+                                                        <button class="btn btn-sm" id="minus-btn"><i class="fa fa-minus"></i></button>
+                                                    </div>
+                                                    <input type="number" class="form-control qty" value="1" min="1" disabled>
+                                                    <div class="input-group-prepend">
+                                                        <button class="btn btn-sm" id="plus-btn"><i class="fa fa-plus"></i></button>
+                                                    </div>                                            
+                                                </div>
+                                            </td>            
+                                            <td class="product-actions">
+                                                <a herf="#" class="btn btn-secondary">Quick View</a> 
+                                                <a herf="#" class="btn btn-primary">Select Options</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="wishlist-item">
+                                            <td class="product-thumbnail">
+                                                <a href="product.html">
+                                                    <img width="100" height="100" src="images/shop/product2_1.png" alt="Dress" class="img-fluid">
+                                                </a>
+                                            </td>            
+                                            <td class="product-name">
+                                                <a href="product.html">T-shirt</a>
+                                                <br />                                                
+                                                <a href="#" class="product-delete">Delete</a>
+                                            </td>            
+                                            <td class="product-price">$59.00</td>            
+                                            <td class="product-quantity">
+                                                <div class="quantity input-group">
+                                                    <div class="input-group-prepend">
+                                                        <button class="btn btn-sm" id="minus-btn"><i class="fa fa-minus"></i></button>
+                                                    </div>
+                                                    <input type="number" class="form-control qty" value="1" min="1" disabled>
+                                                    <div class="input-group-prepend">
+                                                        <button class="btn btn-sm" id="plus-btn"><i class="fa fa-plus"></i></button>
+                                                    </div>                                            
+                                                </div>
+                                            </td>            
+                                            <td class="product-actions">
+                                                <a herf="#" class="btn btn-secondary">Quick View</a> 
+                                                <a herf="#" class="btn btn-primary">Select Options</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="wishlist-item">
+                                            <td class="product-thumbnail">
+                                                <a href="product.html">
+                                                    <img width="100" height="100" src="images/shop/product3_1.png" alt="Dress" class="img-fluid">
+                                                </a>
+                                            </td>            
+                                            <td class="product-name">
+                                                <a href="product.html">Woman's Coat</a>
+                                                <br />                                                
+                                                <a href="#" class="product-delete">Delete</a>
+                                            </td>            
+                                            <td class="product-price">$239.00</td>            
+                                            <td class="product-quantity">
+                                                <div class="quantity input-group">
+                                                    <div class="input-group-prepend">
+                                                        <button class="btn btn-sm" id="minus-btn"><i class="fa fa-minus"></i></button>
+                                                    </div>
+                                                    <input type="number" class="form-control qty" value="1" min="1" disabled>
+                                                    <div class="input-group-prepend">
+                                                        <button class="btn btn-sm" id="plus-btn"><i class="fa fa-plus"></i></button>
+                                                    </div>                                            
+                                                </div>
+                                            </td>            
+                                            <td class="product-actions">
+                                                <a herf="#" class="btn btn-secondary">Quick View</a> 
+                                                <a herf="#" class="btn btn-primary">Select Options</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>                                    
+                                </table>
+                            </div>                            
+                        </div>                        
                     </div>                    
 
-                </div><!-- .container -->
+                </div><!-- .container -->                
 
             </div><!-- .page-content -->
 
@@ -360,9 +454,18 @@
 
     <!-- External JavaScripts
 	============================================= -->
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap Slider JS -->
+    <script src="vendors/bootstrap-slider/bootstrap-slider.min.js"></script>
+
+    <!-- Theme JS -->
+    <script src="js/main.js"></script>
 
     <!-- Footer Scripts
 	============================================= -->

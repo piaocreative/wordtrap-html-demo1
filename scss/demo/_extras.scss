@@ -53,6 +53,7 @@
 		background-repeat: no-repeat;
 		background-size: 100%;		
 		opacity: 0;
+		
 		@include transition(opacity 0.3s ease-in-out);
 	}
 
