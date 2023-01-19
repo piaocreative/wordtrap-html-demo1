@@ -10306,6 +10306,11 @@ q::after {
   padding-top: 11.875rem;
   padding-bottom: 9rem;
 }
+#banner h1, #banner .h1 {
+  font-size: 3.75rem;
+  line-height: 4.5rem;
+  margin-bottom: 3.125rem;
+}
 #banner h2, #banner .h2 {
   color: #88584c;
   font-style: italic;
