@@ -59,7 +59,7 @@
 		line-height: $line-height-sm;		
 
 		a {
-			color: $heading-color;
+			color: $headings-color;
 			
 			&:hover { color: $theme-color; }
 		}
@@ -113,8 +113,10 @@
 }
 
 
-/* Single Post
+/* ----------------------------------------------------------------
+	Single Post
 -----------------------------------------------------------------*/
+
 .single-post {
 	.post {
 		background-color: $white;
@@ -148,8 +150,10 @@
 }
 
 
-/* Post Comments
+/* ----------------------------------------------------------------
+	Post Comments
 -----------------------------------------------------------------*/
+
 .comments {
 	background-color: $white;
 	margin-top: 1.875rem;

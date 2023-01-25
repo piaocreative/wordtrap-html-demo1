@@ -16,8 +16,10 @@
 -----------------------------------------------------------------*/
 
 
-/* Category
+/* ----------------------------------------------------------------
+	Product Category
 -----------------------------------------------------------------*/
+
 .category {
 	margin-bottom: 1.875rem;
 	text-align: center;
@@ -40,7 +42,7 @@
 	}
 
 	.category-title {		
-		color: $heading-color;
+		color: $headings-color;
 		font-family: $body-font;
 		font-size: $h4-font-size;
 		font-weight: 400;
@@ -58,8 +60,10 @@
 }
 
 
-/* Product
+/* ----------------------------------------------------------------
+	Product
 -----------------------------------------------------------------*/
+
 .product {
 	margin-bottom: 1.875rem;
 	position: relative;
@@ -171,7 +175,7 @@
 	}
 
 	.product-title {
-		color: $heading-color;
+		color: $headings-color;
 		font-family: $body-font;
 		font-size: $h4-font-size;
 		font-weight: 300;
@@ -246,11 +250,12 @@
 }
 
 
-/* Product Filters
+/* ----------------------------------------------------------------
+	Product Filters
 -----------------------------------------------------------------*/
 .product-filters {
 	.filter-title {
-		color: $heading-color;    
+		color: $headings-color;    
 		font-size: .875rem;
 		font-family: $body-font;
 		font-weight: 600;
@@ -331,8 +336,10 @@
 }
 
 
-/* Reviews
+/* ----------------------------------------------------------------
+	Product Reviews
 -----------------------------------------------------------------*/
+
 #reviews {
 	#comments {
 		.reviews-title {
@@ -363,7 +370,7 @@
 							margin-bottom: 0;
 
 							.review-author {
-								color: $heading-color;
+								color: $headings-color;
 							}
 
 							.review-date {
@@ -388,7 +395,7 @@
 					}
 
 					.rating-text {
-						color: $heading-color;
+						color: $headings-color;
 						font-size: 0.75rem;
 					}
 				}
@@ -412,8 +419,10 @@
 }
 
 
-/* Ads
+/* ----------------------------------------------------------------
+	Ads
 -----------------------------------------------------------------*/
+
 .ads {
 	border-radius: 0.5rem;
     overflow: hidden;
@@ -479,9 +488,11 @@
 }
 
 
-/* Shop Page
+/* ----------------------------------------------------------------
+	Shop Page
 -----------------------------------------------------------------*/
-.shop-page {
+
+#shop-page {
 	.sidebar {
 		.widget {
 			&.featured-products {
@@ -513,9 +524,11 @@
 }
 
 
-/* Single Product Page
+/* ----------------------------------------------------------------
+	Single Product Page
 -----------------------------------------------------------------*/
-.single-product-page {
+
+#single-product-page {
 	background-color: $white;
 
 	.product-thumbnail {
@@ -581,7 +594,7 @@
 			margin-bottom: 1.5rem;
 
 			del {
-				color: $heading-color;
+				color: $headings-color;
 				font-size: 0.875rem;
 				margin-left: 1.25rem;
 			}
@@ -592,7 +605,7 @@
 				display: block;
 
 				a {
-					color: $heading-color;
+					color: $headings-color;
 					font-weight: 600;
 				}
 			}
@@ -621,8 +634,10 @@
 }
 
 
-/* Cart Page & Checkout Page & Wishlist Page
+/* ----------------------------------------------------------------
+	Shop Table
 -----------------------------------------------------------------*/
+
 .shop-table {
 	td, th {			
 		padding: 1rem;
@@ -649,9 +664,18 @@
 			}
 		}
 	}
+
+	& > :not(:last-child) > :last-child > * {
+		border-bottom-color: transparent;
+	}
 }
 
-.cart-page {
+
+/* ----------------------------------------------------------------
+	Cart Page
+-----------------------------------------------------------------*/
+
+#cart-page {
 	.cart-form {
 		.shop-table {
 			tfoot {
@@ -754,7 +778,12 @@
 	}
 }
 
-.checkout-page {
+
+/* ----------------------------------------------------------------
+	Checkout Page
+-----------------------------------------------------------------*/
+
+#checkout-page {
 	.checkout {
 		background-color: $white;
 		padding: 2.5rem 2.375rem;
@@ -840,7 +869,12 @@
 	}
 }
 
-.wishlist-page {
+
+/* ----------------------------------------------------------------
+	Wishlist Page
+-----------------------------------------------------------------*/
+
+#wishlist-page {
 	.shop-table {
 		.wishlist-item {
 			background-color: $white;

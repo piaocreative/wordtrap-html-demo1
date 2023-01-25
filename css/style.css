@@ -101,6 +101,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-bottom: 0.5rem;
   font-weight: 500;
   line-height: 1.2;
+  color: #302f2d;
 }
 
 h1, .h1 {
@@ -5469,6 +5470,7 @@ textarea.form-control-lg {
   padding: 0.5rem 1rem;
   margin-bottom: 0;
   font-size: 0.875rem;
+  color: #302f2d;
   background-color: #f0f0f0;
   border-bottom: 1px solid #d8d8d8;
   border-top-left-radius: calc(0.3rem - 1px);
@@ -10255,9 +10257,6 @@ q::after {
 }
 
 /* ----------------------------------------------------------------
-	Top Login
------------------------------------------------------------------*/
-/* ----------------------------------------------------------------
 	Top Buttons
 -----------------------------------------------------------------*/
 @media (max-width: 991.98px) {
@@ -10275,15 +10274,6 @@ q::after {
   color: #88584c;
 }
 
-/* ----------------------------------------------------------------
-	Top Search
------------------------------------------------------------------*/
-/* ----------------------------------------------------------------
-	Top Cart
------------------------------------------------------------------*/
-/* ----------------------------------------------------------------
-	Top Account
------------------------------------------------------------------*/
 /* ----------------------------------------------------------------
 
 	banner.scss
@@ -10413,7 +10403,8 @@ q::after {
   line-height: 1;
 }
 
-/* Single Post
+/* ----------------------------------------------------------------
+	Single Post
 -----------------------------------------------------------------*/
 .single-post .post {
   background-color: #fff;
@@ -10434,7 +10425,8 @@ q::after {
   line-height: 1.4;
 }
 
-/* Post Comments
+/* ----------------------------------------------------------------
+	Post Comments
 -----------------------------------------------------------------*/
 .comments {
   background-color: #fff;
@@ -10501,7 +10493,8 @@ q::after {
 /* ----------------------------------------------------------------
 	Add here styles for shop pages. Thanks!
 -----------------------------------------------------------------*/
-/* Category
+/* ----------------------------------------------------------------
+	Product Category
 -----------------------------------------------------------------*/
 .category {
   margin-bottom: 1.875rem;
@@ -10536,7 +10529,8 @@ q::after {
   line-height: 2.1428571429;
 }
 
-/* Product
+/* ----------------------------------------------------------------
+	Product
 -----------------------------------------------------------------*/
 .product {
   margin-bottom: 1.875rem;
@@ -10693,7 +10687,8 @@ q::after {
   margin-right: 0.9375rem;
 }
 
-/* Product Filters
+/* ----------------------------------------------------------------
+	Product Filters
 -----------------------------------------------------------------*/
 .product-filters .filter-title {
   color: #302f2d;
@@ -10761,7 +10756,8 @@ q::after {
   display: none;
 }
 
-/* Reviews
+/* ----------------------------------------------------------------
+	Product Reviews
 -----------------------------------------------------------------*/
 #reviews #comments .reviews-title {
   font-size: 1.125rem;
@@ -10814,7 +10810,8 @@ q::after {
   margin-bottom: 0;
 }
 
-/* Ads
+/* ----------------------------------------------------------------
+	Ads
 -----------------------------------------------------------------*/
 .ads {
   border-radius: 0.5rem;
@@ -10869,43 +10866,45 @@ q::after {
   transform: rotate(180deg);
 }
 
-/* Shop Page
+/* ----------------------------------------------------------------
+	Shop Page
 -----------------------------------------------------------------*/
-.shop-page .sidebar .widget.featured-products .product .product-image {
+#shop-page .sidebar .widget.featured-products .product .product-image {
   border-radius: 0.5rem;
 }
-.shop-page .products .product {
+#shop-page .products .product {
   background-color: #fff;
   padding: 1rem;
   border-radius: 0.5rem;
 }
-.shop-page .products .product .product-image {
+#shop-page .products .product .product-image {
   height: 19.625rem;
   overflow: hidden;
   border-radius: 0.5rem;
 }
 
-/* Single Product Page
+/* ----------------------------------------------------------------
+	Single Product Page
 -----------------------------------------------------------------*/
-.single-product-page {
+#single-product-page {
   background-color: #fff;
 }
-.single-product-page .product-thumbnail {
+#single-product-page .product-thumbnail {
   position: relative;
   border-radius: 0.5rem;
 }
-.single-product-page .product-thumbnail .product-gallery {
+#single-product-page .product-thumbnail .product-gallery {
   position: absolute;
   left: 0;
   top: 1.25rem;
   z-index: 1;
 }
-.single-product-page .product-thumbnail .product-gallery li {
+#single-product-page .product-thumbnail .product-gallery li {
   border-left: 5px solid transparent;
   margin-bottom: 0.625rem;
   padding-left: 0.75rem;
 }
-.single-product-page .product-thumbnail .product-gallery li > a {
+#single-product-page .product-thumbnail .product-gallery li > a {
   background-color: #fff;
   display: block;
   width: 5.625rem;
@@ -10913,27 +10912,27 @@ q::after {
   overflow: hidden;
   border-radius: 0.5rem;
 }
-.single-product-page .product-thumbnail .product-gallery li:hover, .single-product-page .product-thumbnail .product-gallery li.active {
+#single-product-page .product-thumbnail .product-gallery li:hover, #single-product-page .product-thumbnail .product-gallery li.active {
   border-color: #88584c;
 }
 @media (max-width: 991.98px) {
-  .single-product-page .product-summary {
+  #single-product-page .product-summary {
     padding-top: 1rem;
   }
 }
-.single-product-page .product.single-product {
+#single-product-page .product.single-product {
   padding-top: 3.125rem;
   padding-bottom: 6.25rem;
 }
-.single-product-page .product.single-product .product-title {
+#single-product-page .product.single-product .product-title {
   font-size: 2.5rem;
   font-weight: 700;
 }
-.single-product-page .product.single-product .product-rating {
+#single-product-page .product.single-product .product-rating {
   margin-top: 0;
   display: inline-block;
 }
-.single-product-page .product.single-product .product-price {
+#single-product-page .product.single-product .product-price {
   font-size: 1.5rem;
   font-weight: 600;
   align-items: flex-end;
@@ -10941,34 +10940,35 @@ q::after {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
-.single-product-page .product.single-product .product-price del {
+#single-product-page .product.single-product .product-price del {
   color: #302f2d;
   font-size: 0.875rem;
   margin-left: 1.25rem;
 }
-.single-product-page .product.single-product .product-meta span {
+#single-product-page .product.single-product .product-meta span {
   display: block;
 }
-.single-product-page .product.single-product .product-meta span a {
+#single-product-page .product.single-product .product-meta span a {
   color: #302f2d;
   font-weight: 600;
 }
-.single-product-page .product.single-product form.cart {
+#single-product-page .product.single-product form.cart {
   display: flex;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-.single-product-page .product.single-product form.cart input[type=submit] {
+#single-product-page .product.single-product form.cart input[type=submit] {
   padding: 0.75rem 1.25rem;
 }
-.single-product-page .product-more-info .tab-content {
+#single-product-page .product-more-info .tab-content {
   background-color: #fff;
   margin-top: 1.5rem;
   padding: 2.125rem 2.625rem;
   border-radius: 0.5rem;
 }
 
-/* Cart Page & Checkout Page & Wishlist Page
+/* ----------------------------------------------------------------
+	Shop Table
 -----------------------------------------------------------------*/
 .shop-table td, .shop-table th {
   padding: 1rem;
@@ -10985,158 +10985,170 @@ q::after {
   border-color: #f5f5f5;
   vertical-align: middle;
 }
+.shop-table > :not(:last-child) > :last-child > * {
+  border-bottom-color: transparent;
+}
 
-.cart-page .cart-form .shop-table tfoot td {
+/* ----------------------------------------------------------------
+	Cart Page
+-----------------------------------------------------------------*/
+#cart-page .cart-form .shop-table tfoot td {
   padding: 1.25rem 0;
 }
-.cart-page .cart-form .shop-table .cart-item {
+#cart-page .cart-form .shop-table .cart-item {
   background-color: #fff;
 }
-.cart-page .cart-form .shop-table .cart-item .product-thumbnail {
+#cart-page .cart-form .shop-table .cart-item .product-thumbnail {
   width: 8.25rem;
 }
-.cart-page .cart-form .shop-table .cart-item .product-thumbnail img {
+#cart-page .cart-form .shop-table .cart-item .product-thumbnail img {
   object-fit: cover;
   object-position: center;
   width: 6.25rem;
   height: 6.25rem;
   border-radius: 0.5rem;
 }
-.cart-page .cart-form .shop-table .cart-item .product-name {
+#cart-page .cart-form .shop-table .cart-item .product-name {
   color: #302f2d;
   font-size: 1rem;
   font-weight: 600;
 }
-.cart-page .cart-form .shop-table .cart-item .product-wishlist,
-.cart-page .cart-form .shop-table .cart-item .product-delete {
+#cart-page .cart-form .shop-table .cart-item .product-wishlist,
+#cart-page .cart-form .shop-table .cart-item .product-delete {
   color: #7d7b78;
   font-size: 0.8125rem;
   margin-right: 1.25rem;
 }
-.cart-page .cart-form .shop-table .cart-item .product-wishlist:hover,
-.cart-page .cart-form .shop-table .cart-item .product-delete:hover {
+#cart-page .cart-form .shop-table .cart-item .product-wishlist:hover,
+#cart-page .cart-form .shop-table .cart-item .product-delete:hover {
   color: #88584c;
 }
-.cart-page .cart-form .shop-table .cart-item .product-subtotal {
+#cart-page .cart-form .shop-table .cart-item .product-subtotal {
   color: #302f2d;
   font-size: 1.25rem;
   font-weight: 600;
 }
-.cart-page .cart-totals {
+#cart-page .cart-totals {
   background-color: #fff;
   padding: 2.5rem 2.375rem;
   border-radius: 0.5rem;
 }
-.cart-page .cart-totals .shop-table {
+#cart-page .cart-totals .shop-table {
   font-size: 0.75rem;
 }
-.cart-page .cart-totals .shop-table td, .cart-page .cart-totals .shop-table th {
+#cart-page .cart-totals .shop-table td, #cart-page .cart-totals .shop-table th {
   border-bottom-width: 1px;
   border-color: #f5f5f5;
   color: #302f2d;
   padding: 1rem 0;
   vertical-align: middle;
 }
-.cart-page .cart-totals .shop-table th {
+#cart-page .cart-totals .shop-table th {
   font-weight: 600;
   text-transform: uppercase;
 }
-.cart-page .cart-totals .shop-table td {
+#cart-page .cart-totals .shop-table td {
   text-align: right;
 }
-.cart-page .cart-totals .shop-table .order-total td {
+#cart-page .cart-totals .shop-table .order-total td {
   font-size: 1.25rem;
   font-weight: 600;
 }
-.cart-page .cart-totals .shop-table .shipping td {
+#cart-page .cart-totals .shop-table .shipping td {
   text-align: left;
 }
-.cart-page .cart-totals .shop-table .shipping td p {
+#cart-page .cart-totals .shop-table .shipping td p {
   font-weight: 600;
 }
-.cart-page .cart-totals .shop-table .shipping .shipping-destination input {
+#cart-page .cart-totals .shop-table .shipping .shipping-destination input {
   background-color: #f5f5f5;
 }
 
-.checkout-page .checkout {
+/* ----------------------------------------------------------------
+	Checkout Page
+-----------------------------------------------------------------*/
+#checkout-page .checkout {
   background-color: #fff;
   padding: 2.5rem 2.375rem;
   border-radius: 0.5rem;
 }
-.checkout-page .checkout .form-control {
+#checkout-page .checkout .form-control {
   background-color: #f5f5f5;
 }
-.checkout-page .order-details {
+#checkout-page .order-details {
   background-color: #fff;
   color: #302f2d;
   font-size: 0.75rem;
   padding: 2.5rem 2.375rem;
   border-radius: 0.5rem;
 }
-.checkout-page .order-details .shop-table td, .checkout-page .order-details .shop-table th {
+#checkout-page .order-details .shop-table td, #checkout-page .order-details .shop-table th {
   border-color: #f5f5f5;
   border-bottom-width: 1px;
   color: #302f2d;
   padding: 1rem 0;
   vertical-align: middle;
 }
-.checkout-page .order-details .shop-table .product-total {
+#checkout-page .order-details .shop-table .product-total {
   text-align: right;
 }
-.checkout-page .order-details .shop-table thead th {
+#checkout-page .order-details .shop-table thead th {
   font-weight: 600;
   text-transform: uppercase;
 }
-.checkout-page .order-details .shop-table tfoot .cart-subtotal th,
-.checkout-page .order-details .shop-table tfoot .order-total th {
+#checkout-page .order-details .shop-table tfoot .cart-subtotal th,
+#checkout-page .order-details .shop-table tfoot .order-total th {
   font-weight: 600;
   text-transform: uppercase;
 }
-.checkout-page .order-details .shop-table tfoot .cart-subtotal td,
-.checkout-page .order-details .shop-table tfoot .order-total td {
+#checkout-page .order-details .shop-table tfoot .cart-subtotal td,
+#checkout-page .order-details .shop-table tfoot .order-total td {
   text-align: right;
 }
-.checkout-page .order-details .shop-table tfoot .order-total td {
+#checkout-page .order-details .shop-table tfoot .order-total td {
   font-size: 1.25rem;
   font-weight: 600;
 }
-.checkout-page .order-details .shop-table .shipping td {
+#checkout-page .order-details .shop-table .shipping td {
   text-align: left;
 }
-.checkout-page .order-details .shop-table .shipping td p {
+#checkout-page .order-details .shop-table .shipping td p {
   font-weight: 600;
 }
-.checkout-page .order-details .shop-table .shipping .shipping-destination input {
+#checkout-page .order-details .shop-table .shipping .shipping-destination input {
   background-color: #f5f5f5;
 }
-.checkout-page .order-details .checkout-payment p {
+#checkout-page .order-details .checkout-payment p {
   font-weight: 600;
 }
 
-.wishlist-page .shop-table .wishlist-item {
+/* ----------------------------------------------------------------
+	Wishlist Page
+-----------------------------------------------------------------*/
+#wishlist-page .shop-table .wishlist-item {
   background-color: #fff;
 }
-.wishlist-page .shop-table .wishlist-item .product-thumbnail {
+#wishlist-page .shop-table .wishlist-item .product-thumbnail {
   width: 8.25rem;
 }
-.wishlist-page .shop-table .wishlist-item .product-thumbnail img {
+#wishlist-page .shop-table .wishlist-item .product-thumbnail img {
   object-fit: cover;
   object-position: center;
   width: 6.25rem;
   height: 6.25rem;
   border-radius: 0.5rem;
 }
-.wishlist-page .shop-table .wishlist-item .product-name {
+#wishlist-page .shop-table .wishlist-item .product-name {
   color: #302f2d;
   font-size: 1rem;
   font-weight: 600;
 }
-.wishlist-page .shop-table .wishlist-item .product-delete {
+#wishlist-page .shop-table .wishlist-item .product-delete {
   color: #7d7b78;
   font-size: 0.8125rem;
   margin-right: 1.25rem;
 }
-.wishlist-page .shop-table .wishlist-item .product-delete:hover {
+#wishlist-page .shop-table .wishlist-item .product-delete:hover {
   color: #88584c;
 }
 
@@ -11206,16 +11218,21 @@ q::after {
 	Page Styles
 -----------------------------------------------------------------*/
 /* ----------------------------------------------------------------
-	Add here styles for page title. Thanks!
+	Add here styles for page. Thanks!
+-----------------------------------------------------------------*/
+/* ----------------------------------------------------------------
+	Page Content
 -----------------------------------------------------------------*/
 .page-content {
   padding-top: 3.125rem;
   padding-bottom: 5.625rem;
 }
 
+/* ----------------------------------------------------------------
+	Page Title
+-----------------------------------------------------------------*/
 #page-title {
   position: relative;
-  padding-top: 5.5rem;
 }
 #page-title .title {
   display: block;
@@ -11234,6 +11251,9 @@ q::after {
   margin-bottom: 1.5rem;
 }
 
+/* ----------------------------------------------------------------
+	Breadcrumb	
+-----------------------------------------------------------------*/
 .breadcrumb {
   display: flex;
   font-size: 0.75rem;
@@ -11245,7 +11265,8 @@ q::after {
   padding-left: 0;
 }
 
-/* Sidebar
+/* ----------------------------------------------------------------
+	Sidebar
 -----------------------------------------------------------------*/
 @media (max-width: 991.98px) {
   .sidebar {
@@ -11259,7 +11280,32 @@ q::after {
   border-radius: 0.5rem;
 }
 
-/* Team Member
+/* ----------------------------------------------------------------
+	About Page
+-----------------------------------------------------------------*/
+#about-page #history_heighlight {
+  padding: 3.5rem 0;
+}
+@media (min-width: 1400px) {
+  #about-page #history_heighlight {
+    position: absolute;
+    bottom: 0;
+  }
+}
+#about-page #history_heighlight p {
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+/* ----------------------------------------------------------------
+	Contact Page
+-----------------------------------------------------------------*/
+#contact-page #map {
+  height: 30rem;
+}
+
+/* ----------------------------------------------------------------
+	Team Member
 -----------------------------------------------------------------*/
 .team-member {
   background-color: #fff;
@@ -11318,23 +11364,26 @@ q::after {
   padding: 3rem;
 }
 
-.single-member main {
+/* ----------------------------------------------------------------
+	Single Member page
+-----------------------------------------------------------------*/
+#single-member-page main {
   background-color: #fff;
 }
-.single-member .team-member {
+#single-member-page .team-member {
   background-color: transparent;
   padding: 0;
   margin-top: 2.25rem;
 }
-.single-member .member-services {
+#single-member-page .member-services {
   background-color: #f5f5f5;
   padding: 5rem 0 3.125rem;
 }
-.single-member .member-services .member-service {
+#single-member-page .member-services .member-service {
   padding-left: 2.25rem;
   position: relative;
 }
-.single-member .member-services .member-service::before {
+#single-member-page .member-services .member-service::before {
   content: "";
   background-image: url("data:image/svg+xml,%3csvg width='34' height='28' viewBox='0 0 34 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M32.9175 0.669397C32.1147 0.0960544 31.0826 0.210723 30.5092 1.0134L13.6507 22.9151L3.78784 14.4296C3.09974 13.8563 1.95289 13.8563 1.37947 14.5443C0.806054 15.2323 0.806061 16.379 1.49416 16.9523L12.7332 26.5845C13.0772 26.8138 13.4213 27.0432 13.88 27.0432C13.9947 27.0432 13.9947 27.0432 14.1094 27.0432C14.5681 27.0432 15.0269 26.6992 15.2562 26.3552L33.1469 2.96277C33.835 2.38943 33.7203 1.24274 32.9175 0.669397Z' fill='%2388584c'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
@@ -11346,28 +11395,29 @@ q::after {
   left: 0;
   top: 0;
 }
-.single-member .member-services .member-service h3, .single-member .member-services .member-service .h3 {
+#single-member-page .member-services .member-service h3, #single-member-page .member-services .member-service .h3 {
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   margin-bottom: 1.375rem;
 }
-.single-member .member-portfolios {
+#single-member-page .member-portfolios {
   padding-top: 5rem;
 }
-.single-member .member-portfolios .member-portfolio {
+#single-member-page .member-portfolios .member-portfolio {
   margin-bottom: 1.875rem;
 }
-.single-member .member-portfolios .member-portfolio img {
+#single-member-page .member-portfolios .member-portfolio img {
   margin-bottom: 1.5rem;
   border-radius: 0.5rem;
 }
-.single-member .member-portfolios .member-portfolio h3, .single-member .member-portfolios .member-portfolio .h3 {
+#single-member-page .member-portfolios .member-portfolio h3, #single-member-page .member-portfolios .member-portfolio .h3 {
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   margin-bottom: 0;
 }
 
-/* Blog Page
+/* ----------------------------------------------------------------
+	Blog Page
 -----------------------------------------------------------------*/
 .blog-page #posts .post {
   background-color: #fff;
@@ -11590,9 +11640,20 @@ input[type=radio]:checked::after {
   margin-left: 1rem;
 }
 
-/*-----------------------------------------------------------------------------------
+/* ----------------------------------------------------------------
+
 	utilities.scss
------------------------------------------------------------------------------------*/
+
+-----------------------------------------------------------------*/
+/* ----------------------------------------------------------------
+	Utilities Styles
+-----------------------------------------------------------------*/
+/* ----------------------------------------------------------------
+	Add here styles for utilities. Thanks!
+-----------------------------------------------------------------*/
+/* ----------------------------------------------------------------
+	Custom Font
+-----------------------------------------------------------------*/
 .body-font {
   font-family: "Open Sans", sans-serif !important;
 }
@@ -11609,6 +11670,9 @@ input[type=radio]:checked::after {
   color: #000 !important;
 }
 
+/* ----------------------------------------------------------------
+	Image
+-----------------------------------------------------------------*/
 img {
   max-width: 100%;
 }
@@ -11619,6 +11683,9 @@ img.img-full {
   object-fit: cover;
 }
 
+/* ----------------------------------------------------------------
+	Section
+-----------------------------------------------------------------*/
 .section {
   position: relative;
   padding-top: 6.25rem;
@@ -11641,6 +11708,9 @@ img.img-full {
   margin-bottom: 6.25rem;
 }
 
+/* ----------------------------------------------------------------
+	Slider
+-----------------------------------------------------------------*/
 .slider.slider-horizontal {
   width: 100%;
 }
@@ -11666,6 +11736,9 @@ img.img-full {
   height: 14px;
 }
 
+/* ----------------------------------------------------------------
+	Tabs
+-----------------------------------------------------------------*/
 .nav-tabs {
   border-bottom: 0;
   margin-bottom: 1rem;
@@ -11678,6 +11751,9 @@ img.img-full {
   border-right: 0;
 }
 
+/* ----------------------------------------------------------------
+	Accordion
+-----------------------------------------------------------------*/
 .accordion-header {
   margin-bottom: 0;
 }
@@ -11701,6 +11777,9 @@ img.img-full {
   border-radius: 0.5rem;
 }
 
+/* ----------------------------------------------------------------
+	Pagination
+-----------------------------------------------------------------*/
 .pagination .page-item {
   margin-left: 0.5rem;
 }
@@ -11722,6 +11801,37 @@ img.img-full {
   line-height: 1;
   position: relative;
   border-radius: 0.5rem;
+}
+
+/* ----------------------------------------------------------------
+	Custom Link
+-----------------------------------------------------------------*/
+.arrow-link {
+  position: relative;
+  padding-right: 1.5rem;
+}
+.arrow-link:after {
+  content: "";
+  position: absolute;
+  right: 0.25rem;
+  top: 50%;
+  margin-top: -0.25rem;
+  display: block;
+  width: 0.25rem;
+  height: 0.8rem;
+  background-image: url(../images/right-arrow-icon.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .arrow-link:after {
+    transition: none;
+  }
+}
+.arrow-link:hover:after {
+  opacity: 1;
 }
 
 /*-----------------------------------------------------------------------------------
@@ -11890,50 +12000,5 @@ img.img-full {
 /* ----------------------------------------------------------------
 	Add here extra styles for demo. Thanks!
 -----------------------------------------------------------------*/
-#history_heighlight {
-  padding: 3.5rem 0;
-}
-@media (min-width: 1400px) {
-  #history_heighlight {
-    position: absolute;
-    bottom: 0;
-  }
-}
-#history_heighlight p {
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-#map {
-  height: 30rem;
-}
-
-.arrow-link {
-  position: relative;
-  padding-right: 1.5rem;
-}
-.arrow-link:after {
-  content: "";
-  position: absolute;
-  right: 0.25rem;
-  top: 50%;
-  margin-top: -0.25rem;
-  display: block;
-  width: 0.25rem;
-  height: 0.8rem;
-  background-image: url(../images/right-arrow-icon.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
-@media (prefers-reduced-motion: reduce) {
-  .arrow-link:after {
-    transition: none;
-  }
-}
-.arrow-link:hover:after {
-  opacity: 1;
-}
 
 /*# sourceMappingURL=style.css.map */

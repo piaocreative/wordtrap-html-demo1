@@ -14,7 +14,7 @@
 
 $theme-color:                           #88584c;
 $body-color:                            #7d7b78;
-$heading-color:                         #302f2d;
+$headings-color:                         #302f2d;
 
 
 //-------------------- Font Families --------------------//
@@ -28,7 +28,7 @@ $font-family-base:                      $body-font;
 
 // Theme Colors
 $primary:                               $theme-color;
-$secondary:                             $heading-color;
+$secondary:                             $headings-color;
 $light:                                 #f5f5f5;
 $dark:                                  #5c5b58;
 
@@ -47,7 +47,7 @@ $spacers: (
 $body-bg:                                 #f5f5f5;
 
 // Link
-$link-color:                              $heading-color;
+$link-color:                              $headings-color;
 $link-decoration:				                  none;
 $link-hover-color:				                $theme-color;
 
@@ -82,7 +82,7 @@ $btn-line-height:                         1;
 
 
 // Forms
-$input-color:                             $heading-color;
+$input-color:                             $headings-color;
 $input-border-color:                      $theme-color;
 $input-border-width:			                0;
 $input-btn-focus-color-opacity:           1;
@@ -173,12 +173,12 @@ $primary-menu-font:                       $body-font;
 $primary-menu-font-weight:                400;
 $primary-menu-font-size:                  0.9375rem;
 $primary-menu-font-tt:                    initial;
-$primary-menu-font-color:                 $heading-color;
+$primary-menu-font-color:                 $headings-color;
 $primary-menu-font-spacing:               0;
 
 // top Button
 $top-btn-font-size:        			          1.5rem;
-$top-btn-font-color:       			          $heading-color;
+$top-btn-font-color:       			          $headings-color;
 
 
 //-------------------- Section --------------------//
