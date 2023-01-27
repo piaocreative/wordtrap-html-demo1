@@ -24,8 +24,8 @@
 	margin-bottom: 1.875rem;
 	text-align: center;
 
-	.category-image {	
-		display: inline-block;	
+	.category-image {
+		display: inline-block;
 		position: relative;
 		width: 9.375rem;
 		height: 9.375rem;
@@ -41,12 +41,12 @@
 		margin-top: 2.5rem;
 	}
 
-	.category-title {		
+	.category-title {
 		color: $headings-color;
 		font-family: $body-font;
 		font-size: $h4-font-size;
 		font-weight: 400;
-		line-height: $line-height-sm;		
+		line-height: $line-height-sm;
 		margin-bottom: 0.375rem;
 	}
 
@@ -83,7 +83,7 @@
 
 			&.product-details-on-bottom {
 				bottom: 0;
-			}		
+			}
 		}
 	}
 
@@ -153,7 +153,7 @@
 	}
 
 	.product-details {
-		padding: 1.25rem 0 0 0;		
+		padding: 1.25rem 0 0 0;
 	}
 
 	.product-price {
@@ -191,7 +191,7 @@
 			font-size: $font-size-base;
 			font-weight: 300;
 			line-height: $line-height-base;
-		}		
+		}
 	}
 
 	.product-rating {
@@ -207,7 +207,7 @@
 	}
 
 	.onhot {
-		color: $theme-color;		
+		color: $theme-color;
 		font-family: $body-font;
 		font-size: $h6-font-size;
 		font-weight: 700;
@@ -255,7 +255,7 @@
 -----------------------------------------------------------------*/
 .product-filters {
 	.filter-title {
-		color: $headings-color;    
+		color: $headings-color;
 		font-size: .875rem;
 		font-family: $body-font;
 		font-weight: 600;
@@ -295,7 +295,7 @@
 			}
 		}
 	}
-	
+
 	.product-filter-size {
 		ul li {
 			display: inline-block;
@@ -329,7 +329,7 @@
 					&::after {
 						display: none;
 					}
-				}				
+				}
 			}
 		}
 	}
@@ -344,7 +344,7 @@
 	#comments {
 		.reviews-title {
 			font-size: 1.125rem;
-			
+
 			span {
 				color: $body-color;
 				font-family: $body-font;
@@ -425,12 +425,12 @@
 
 .ads {
 	border-radius: 0.5rem;
-    overflow: hidden;
+	overflow: hidden;
 	position: relative;
 	display: block;
 	margin-bottom: 1.875rem;
 
-	@include media-breakpoint-up(lg) {		
+	@include media-breakpoint-up(lg) {
 		height: 100%;
 	}
 
@@ -483,7 +483,7 @@
 
 	.vertical-text {
 		writing-mode: vertical-lr;
-    	transform: rotate(180deg);
+		transform: rotate(180deg);
 	}
 }
 
@@ -510,17 +510,17 @@
 		.product {
 			background-color: $white;
 			padding: 1rem;
-	
+
 			@include border-radius(0.5rem);
-	
+
 			.product-image {
 				height: 19.625rem;
 				overflow: hidden;
-	
+
 				@include border-radius(0.5rem);
-			}		
+			}
 		}
-	}	
+	}
 }
 
 
@@ -540,10 +540,10 @@
 			top: 1.25rem;
 			z-index: 1;
 
-			li {				
+			li {
 				border-left: 5px solid transparent;
 				margin-bottom: 0.625rem;
-				padding-left: 0.75rem;				
+				padding-left: 0.75rem;
 
 				> a {
 					background-color: $white;
@@ -553,7 +553,7 @@
 					overflow: hidden;
 
 					@include border-radius(0.5rem);
-				}				
+				}
 
 				&:hover,
 				&.active {
@@ -599,8 +599,8 @@
 				margin-left: 1.25rem;
 			}
 		}
-		
-		.product-meta {			
+
+		.product-meta {
 			span {
 				display: block;
 
@@ -627,7 +627,7 @@
 			background-color: $white;
 			margin-top: 1.5rem;
 			padding: 2.125rem 2.625rem;
-			
+
 			@include border-radius(0.5rem);
 		}
 	}
@@ -639,7 +639,7 @@
 -----------------------------------------------------------------*/
 
 .shop-table {
-	td, th {			
+	td, th {
 		padding: 1rem;
 	}
 
@@ -683,29 +683,29 @@
 					padding: 1.25rem 0;
 				}
 			}
-	
+
 			.cart-item {
 				background-color: $white;
-	
+
 				.product-thumbnail {
 					width: 8.25rem;
-	
+
 					img {
 						object-fit: cover;
 						object-position: center;
 						width: 6.25rem;
 						height: 6.25rem;
-	
+
 						@include border-radius(0.5rem);
 					}
 				}
-	
+
 				.product-name {
 					color: $secondary;
 					font-size: 1rem;
 					font-weight: 600;
 				}
-	
+
 				.product-wishlist,
 				.product-delete {
 					color: $body-color;
@@ -716,7 +716,7 @@
 						color: $primary;
 					}
 				}
-	
+
 				.product-subtotal {
 					color: $secondary;
 					font-size: 1.25rem;
@@ -724,7 +724,7 @@
 				}
 			}
 		}
-	}	
+	}
 
 	.cart-totals {
 		background-color: $white;
@@ -732,7 +732,7 @@
 
 		@include border-radius(0.5rem);
 
-		.shop-table {			
+		.shop-table {
 			font-size: 0.75rem;
 
 			td, th {
@@ -742,7 +742,7 @@
 				padding: 1rem 0;
 				vertical-align: middle;
 			}
-			
+
 			th {
 				font-weight: 600;
 				text-transform: uppercase;
@@ -753,7 +753,7 @@
 			}
 
 			.order-total {
-				td {					
+				td {
 					font-size: 1.25rem;
 					font-weight: 600;
 				}
@@ -821,7 +821,7 @@
 					font-weight: 600;
 					text-transform: uppercase;
 				}
-			}	
+			}
 
 			tfoot {
 				.cart-subtotal,
@@ -843,23 +843,23 @@
 					}
 				}
 			}
-			
+
 			.shipping {
 				td {
 					text-align: left;
-	
+
 					p {
 						font-weight: 600;
 					}
 				}
-	
+
 				.shipping-destination {
 					input {
 						background-color: $light;
 					}
 				}
 			}
-		}	
+		}
 
 		.checkout-payment {
 			p {

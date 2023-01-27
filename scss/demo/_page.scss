@@ -33,19 +33,19 @@
 #page-title {
 	position: relative;
 	// padding-top: 5.5rem;
-	
+
 	.title {
-		display: block;		
+		display: block;
 		font-family: $heading-font;
 		font-size: $h1-font-size;
-		font-weight: 900;		
+		font-weight: 900;
 		line-height: 1;
 		margin-bottom: 3.25rem;
 	}
 
 	.sub-title {
 		display: block;
-		font-family: $heading-font;		
+		font-family: $heading-font;
 		font-size: $h2-font-size;
 		font-weight: 700;
 		line-height: 1;
@@ -55,7 +55,7 @@
 
 
 /* ----------------------------------------------------------------
-	Breadcrumb	
+	Breadcrumb
 -----------------------------------------------------------------*/
 
 .breadcrumb {
@@ -82,7 +82,7 @@
 	}
 
 	.widget {
-		background-color: $white;	
+		background-color: $white;
 		padding: 1.875rem;
 		margin-bottom: 0.625rem;
 
@@ -98,17 +98,17 @@
 #about-page {
 	#history_heighlight {
 		padding: 3.5rem 0;
-	
+
 		@include media-breakpoint-up(xxl) {
 			position: absolute;
-			bottom: 0;	
-		}	
-	
+			bottom: 0;
+		}
+
 		p {
 			font-size: $h3-font-size;
 			line-height: 1.5;
 		}
-	}	
+	}
 }
 
 
@@ -119,7 +119,7 @@
 #contact-page {
 	#map {
 		height: 30rem;
-	}	
+	}
 }
 
 
@@ -144,11 +144,11 @@
 
 	.member-role {
 		color: $primary;
-		font-size: 0.75rem;		
+		font-size: 0.75rem;
 	}
 
 	.member-intro {
-		margin-top: 1.5rem;		
+		margin-top: 1.5rem;
 
 		.read-more {
 			color: $primary;
@@ -204,11 +204,11 @@
 #single-member-page {
 	main {
 		background-color: $white;
-	}	
+	}
 
 	.team-member {
 		background-color: transparent;
-		padding: 0;    
+		padding: 0;
 		margin-top: 2.25rem;
 	}
 
@@ -221,7 +221,7 @@
 			position: relative;
 
 			&::before {
-				content: "";				
+				content: "";
 				background-image: escape-svg($checker-icon);
 				background-repeat: no-repeat;
 				background-size: 100%;
@@ -272,12 +272,12 @@
 		.post {
 			background-color: $white;
 			padding: 0.625rem;
-	
+
 			@include border-radius(0.5rem);
-		
+
 			.post-content {
 				padding: 0.9375rem;
 			}
 		}
-	}	
+	}
 }

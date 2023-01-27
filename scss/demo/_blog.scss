@@ -15,7 +15,7 @@
 
 	&.post-flat {
 		display: flex;
-		
+
 		.post-thumbnail {
 			flex: 1;
 		}
@@ -56,11 +56,11 @@
 	h4 {
 		font-family: $body-font;
 		font-weight: 400;
-		line-height: $line-height-sm;		
+		line-height: $line-height-sm;
 
 		a {
 			color: $headings-color;
-			
+
 			&:hover { color: $theme-color; }
 		}
 	}
@@ -80,8 +80,8 @@
 	}
 }
 
-.entry-content { 
-	position: relative; 
+.entry-content {
+	position: relative;
 	margin-bottom: 3.125rem;
 }
 

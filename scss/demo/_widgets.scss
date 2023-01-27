@@ -24,7 +24,7 @@
 		font-family: $body-font;
 		font-weight: 600;
 		margin-bottom: 0.75rem;
-	}	
+	}
 
 	// Widget - Social
 	&.widget-social {
@@ -35,23 +35,23 @@
 				&:last-child {
 					padding-right: 0;
 				}
-		
+
 				a {
-					background-color: #43423f;					
+					background-color: #43423f;
 					color: #b7b7b7;
 					display: inline-block;
 					line-height: 1.8125rem;
 					width: 1.8125rem;
-					height: 1.8125rem;		
+					height: 1.8125rem;
 					vertical-align: middle;
 					text-align: center;
 					@include border-radius(50%);
-		
+
 					&:hover {
 						background-color: $theme-color;
 						color: $white;
 					}
-		
+
 					i {
 						vertical-align: top;
 						line-height: 1.8125rem;
@@ -120,7 +120,7 @@
 				& + .input-group-append {
 					.btn {
 						border-top-left-radius: 0;
-    					border-bottom-left-radius: 0;
+						border-bottom-left-radius: 0;
 					}
 				}
 			}
@@ -164,7 +164,7 @@
 
 					&[aria-expanded="true"] {
 						color: $theme-color;
-						
+
 						&::after {
 							background-image: escape-svg($arrow-up-icon);
 						}

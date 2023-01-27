@@ -13,8 +13,8 @@
 
 .navbar-top {
 	background-color: $secondary;
-	position: relative;	
-	font-size: 0.75rem;	
+	position: relative;
+	font-size: 0.75rem;
 
 	@include media-breakpoint-up(lg) {
 		height: $topbar-height;

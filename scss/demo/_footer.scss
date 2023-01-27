@@ -32,7 +32,7 @@
 		&::before {
 			background-color: $secondary;
 			content: "";
-			position: absolute;			
+			position: absolute;
 			right: calc(50% - 50vw);
 			top: 0;
 			height: 100%;
@@ -41,7 +41,7 @@
 			@include media-breakpoint-up(lg) {
 				right: 0;
 				width: 58.33333vw;
-			}			
+			}
 		}
 	}
 
@@ -60,6 +60,6 @@
 #copyrights {
 	color: $dark;
 	font-size: $font-size-base;
-	font-weight: 300;	
-	z-index: 1;	
+	font-weight: 300;
+	z-index: 1;
 }
